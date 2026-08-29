@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Koki Matsuoka | Software Engineer Portfolio",
   description:
-    "Koki Matsuoka's bilingual portfolio featuring backend infrastructure, observability, full-stack development, and applied LLM projects.",
+    "Koki Matsuoka's bilingual portfolio featuring broad technical interests, infrastructure, AI, software development, and international experience.",
 };
 
 export default function RootLayout({
