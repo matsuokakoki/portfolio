@@ -214,11 +214,11 @@ skillGroups: [
   },
   {
     name: "インフラ / バックエンド",
-    skills: ["Linux", "Docker", "Git / GitHub", "Splunk / SPL", "Ansible", "REST API", "Firebase / Firestore", "PostgreSQL / PostGIS", "SQLite"],
+    skills: ["Linux", "Docker", "Git / GitHub", "Ansible", "REST API", "Firebase / Firestore", "PostgreSQL / PostGIS", "SQLite"],
   },
   {
     name: "AI / ML",
-    skills: ["Hugging Face", "vLLM", "LoRA / PEFT", "RAG", "Embeddings", "MCP"],
+    skills: ["Hugging Face", "vLLM", "LoRA / PEFT", "RAG", "Embeddings"],
   },
   {
     name: "コミュニケーション",
@@ -453,11 +453,11 @@ awards: [
       },
       {
         name: "Infrastructure / Backend",
-        skills: ["Linux", "Docker", "Git / GitHub", "Splunk / SPL", "Ansible", "REST APIs", "Firebase / Firestore", "PostgreSQL / PostGIS", "SQLite"],
+        skills: ["Linux", "Docker", "Git / GitHub", "Ansible", "REST APIs", "Firebase / Firestore", "PostgreSQL / PostGIS", "SQLite"],
       },
       {
         name: "AI / ML",
-        skills: ["Hugging Face", "vLLM", "LoRA / PEFT", "RAG", "Embeddings", "MCP"],
+        skills: ["Hugging Face", "vLLM", "LoRA / PEFT", "RAG", "Embeddings"],
       },
       {
         name: "Communication",
