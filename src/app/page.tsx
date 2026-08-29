@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import type { ReactNode } from "react";
 import Image from "next/image";
 
@@ -10,6 +10,8 @@ const profile = {
   name: "松岡功樹(Koki Matsuoka)",
   email: "i5k0o9k@gmail.com",
   university: "Nagoya University",
+  github: "https://github.com/matsuokakoki",
+  linkedin: "https://www.linkedin.com/in/koki-matsuoka-nagoya-japan/",
 };
 
 const content = {
@@ -24,10 +26,10 @@ const content = {
       "Awards",
       "Contact",
     ],
-    badge: "Computer Science Student / Software Developer",
-    heroTitle: "幅広い好奇心、学習意欲、国際性",
+    badge: "Computer Science Student / Software Engineer",
+    heroTitle: "実運用を支えるソフトウェアとAIをつくる",
     heroLead:
-      "名古屋大学で情報学を学びながら、Web開発、サーバー運用、DX、国際交流に取り組んでいます。実用性のあるシステムを作り、改善し続けることを大切にしています。",
+      "名古屋大学でコンピュータ科学を学びながら、バックエンド・インフラ、Observability、フルスタック開発、建設分野のLLM評価・適応に取り組んでいます。作って終わりではなく、実際に使われる環境へ届け、計測し、改善することを大切にしています。",
     primaryCta: "Experienceを見る",
     secondaryCta: "Contact",
     location: "Japan / Aichi",
@@ -35,66 +37,125 @@ const content = {
 
     aboutTitle: "About",
     aboutText:
-      "将来はグローバルなIT企業で、社会に大きな影響を与えるプロダクト開発に関わることを目指しています。フロントエンド、バックエンド、データベース、サーバー運用、英語でのコミュニケーションを、授業だけでなく実践を通して学んでいます。",
+      "バックエンド・インフラからフルスタック開発、AI/MLまで、実際の利用者と運用課題に向き合いながら経験を広げています。大学OpenCourseWareや個人塾の業務システムを継続運用し、LINEヤフーでは大規模ログ基盤のObservability改善に従事しました。建設分野では、LLMの評価基盤とドメイン適応を定量的に検証しています。",
 educationTitle: "Education",
 education: {
   school: "名古屋大学",
-  period: "2024年4月 – 現在",
-  degree: "情報学部",
-  location: "日本",
+  period: "2024年4月 – 2029年3月卒業予定",
+  degree: "情報学部 コンピュータ科学科 学士課程",
+  location: "愛知県名古屋市",
 },
+
+    features: [
+      {
+        num: "01",
+        title: "Production Ownership",
+        body: "設計・開発だけでなく、本番導入と継続運用まで責任を持つ",
+      },
+      {
+        num: "02",
+        title: "Observability",
+        body: "ログとメトリクスからシステムを理解し、改善につなげる",
+      },
+      {
+        num: "03",
+        title: "Applied AI",
+        body: "LLMを評価指標と実験結果に基づいて実用課題へ適用する",
+      },
+      {
+        num: "04",
+        title: "Global Collaboration",
+        body: "英語と異文化経験を生かし、多様なチームで協働する",
+      },
+    ],
 
     experienceTitle: "Technical Experience",
     experiences: [
       {
     role: "NUOCW Web運用スタッフ",
     org: "名古屋大学 / サーバーサイド班",
-    period: "2025年 – 現在",
+        period: "2025年 – 現在",
         points: [
-          "大学Webインフラとバックエンドシステムの保守・改善を担当",
-          "SSL証明書更新の自動化、新サーバー移行、運用信頼性向上に貢献",
-          "講義公開システムのAPI開発やサーバーメンテナンスを支援",
+          "OpenCourseWareのバックエンド・インフラを保守・改善し、SSL証明書関連の運用自動化とサーバー移行を支援",
+          "講義Markdownの変更を検知してデータベースへ同期する仕組みを開発",
+          "Embeddingを用いた講義推薦システムに参加し、リクエスト追跡、レイテンシ、SQL実行、結果件数を記録するAPI Observability項目を設計",
         ],
-        tags: ["Server Operations", "Backend", "API", "Automation", "SSL"],
+        tags: ["Backend", "Infrastructure", "Embeddings", "API Observability", "Automation"],
       },
       {
     role: "出席管理システム開発",
     org: "個人塾",
     period: "2024年 – 現在",
         points: [
-          "Webベースの出席管理システムをゼロから設計・開発",
-          "出席管理と事務作業のデジタル化により業務効率を改善",
-          "データベース設計、フロントエンド、バックエンドロジックを含むフルスタック実装を担当",
-          "現在、60人以上の生徒・講師が毎日利用",
+          "出席・生徒管理Webシステムを一人で設計・開発し、1年以上継続運用",
+          "JavaScriptとFirebase / Firestoreを用いて手作業の業務をデジタル化し、現在は60人以上の生徒・講師が毎日利用",
         ],
-        tags: ["Web App", "Firebase", "Frontend", "Backend", "DX"],
+        tags: ["Full Stack", "JavaScript", "Firebase", "Firestore", "Production"],
       },
       {
-    role: "大学構内施設探索アプリ開発",
-    org: "大学チーム開発 / 6人チーム",
-    period: "2026年",
-  points: [
-      "大学構内の施設探索を効率化する位置情報Webアプリを6人チームで企画・開発",
-      "Geolocation API、MapLibre GL JS、Supabase + PostGISを用いて現在地表示と最寄り施設検索を実装",
-      "設備情報や清潔度評価を統合し、課題設定から設計・開発・改善まで経験",
-  ],
-  tags: ["Next.js", "TypeScript", "MapLibre GL JS", "Supabase", "PostGIS", "Geolocation API"],
-},
-{
-    role: "IFC/BIM向けLLMファインチューニング",
-    org: "個人研究プロジェクト",
-    period: "2026年",
-  points: [
-      "建築情報モデルIFCに特化したLLM適応を目的に、Gemma 3 1Bの軽量ファインチューニング基盤を構築",
-      "Hugging Faceデータセットを分析し、4bit量子化とLoRAを用いたColab / Tesla T4向け学習構成を設計",
-      "学習エラーの解析、LoRA adapter生成、生成回答の定性評価まで含む実験サイクルを実装",
-  ],
-  tags: ["LLM", "Gemma", "LoRA", "PEFT", "Hugging Face", "Google Colab"],
-},
+        role: "Software Engineer Intern / Observability・ログ基盤",
+        org: "LINEヤフー株式会社",
+        period: "2026年8月 – 2026年9月",
+        points: [
+          "10万台をはるかに超えるサーバーを対象とする監査ログ確認用Splunkダッシュボードを構築・最適化し、本番Splunk環境へデプロイ。ログ配送遅延を考慮しつつ処理時間を73%削減",
+          "MCPを用いたAIエージェントとSplunkの連携をPoCとして検証し、認証・セキュリティ制約を整理した上で、OSS本体を改変せずCodex CLIからHTTP経由のログ検索を実現",
+          "ログ配送システムのステートレス化とPaaS / CaaS移行を負荷試験・ログ欠損比較で評価し、スケーラビリティ、可用性、コスト、移行リスクを文書化",
+        ],
+        tags: ["Splunk", "SPL", "Observability", "MCP", "Codex CLI", "PaaS / CaaS"],
+      },
+      {
+        role: "建設AI LLM評価・リーダーボード",
+        org: "個人研究プロジェクト",
+        period: "2026年",
+        points: [
+          "商用利用可能な5つのベンチマークを用いたAEC / BIM向けLLM評価基盤を設計し、GPUクラスタ上でオープンウェイトモデルを評価",
+          "APIモデル・オープンモデル双方の評価フロー、結果管理、新モデルを継続追加する運用方式を設計",
+          "1,000件超のベンチマークタスクについてトークン使用量と評価コストを試算し、モデル選定と継続運用の判断材料を作成",
+        ],
+        tags: ["Python", "vLLM", "Hugging Face", "GPU Cluster", "LLM Evaluation"],
+      },
+      {
+        role: "IFC / BIM特化LLMファインチューニング",
+        org: "個人研究プロジェクト",
+        period: "2026年",
+        points: [
+          "Gemma 3 1B InstructをLoRAでIFC / BIM領域へ適応し、33,600件の学習データで学習",
+          "学習とは別の900件で評価した結果、ROUGE-Lを68%改善（0.0973 → 0.1636）、BLEUを2.9倍に向上（0.0174 → 0.0502）",
+        ],
+        tags: ["Python", "Gemma 3", "LoRA", "PEFT", "Hugging Face", "LLM Evaluation"],
+      },
+      {
+        role: "hayo - グループ待ち合わせ支援アプリ",
+        org: "ハッカソン",
+        period: "2026年",
+        points: [
+          "グループメンバーの位置情報と到着状況を共有するアプリを開発",
+          "東海予選4位・全国15位を獲得",
+        ],
+        tags: ["Hackathon", "Location Sharing", "Team Development"],
+      },
+      {
+        role: "大学構内施設検索Webアプリ",
+        org: "大学チーム開発 / 6人チーム",
+        period: "2026年",
+        points: [
+          "Next.js、TypeScript、Supabase / PostGIS、MapLibre GL JSを用いた位置情報ベースの大学構内施設検索アプリを開発",
+        ],
+        tags: ["Next.js", "TypeScript", "Supabase", "PostGIS", "MapLibre GL JS"],
+      },
     ],
 
     internationalTitle: "International Experience",
     international: [
+      {
+        title: "Asia Undergraduate Summit",
+        org: "National University of Singapore",
+        period: "2026",
+        points: [
+          "Top 3プロジェクトに選出",
+          "Loop to Lifeを開発し、2026年12月にラオスで2週間の現地実施を予定",
+        ],
+      },
       {
         title: "University of Oregon Short-term Study",
         org: "United States",
@@ -143,19 +204,19 @@ activities: [
 skillGroups: [
   {
     name: "プログラミング言語",
-    skills: ["Python", "Go", "C++", "C", "JavaScript"],
+    skills: ["Python", "Go", "C++", "C", "JavaScript", "TypeScript"],
   },
   {
     name: "Web開発",
     skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
   },
   {
-    name: "バックエンド / データベース",
-    skills: ["Firebase", "Firestore", "Supabase", "API開発"],
+    name: "インフラ / バックエンド",
+    skills: ["Linux", "Docker", "Git / GitHub", "Splunk / SPL", "Ansible", "REST API", "Firebase / Firestore", "PostgreSQL / PostGIS", "SQLite"],
   },
   {
-    name: "インフラ / ツール",
-    skills: ["Git", "GitHub", "サーバー運用", "自動化", "SSL"],
+    name: "AI / ML",
+    skills: ["Hugging Face", "vLLM", "LoRA / PEFT", "RAG", "Embeddings", "MCP"],
   },
   {
     name: "コミュニケーション",
@@ -201,10 +262,10 @@ awards: [
       "Awards",
       "Contact",
     ],
-    badge: "Computer Science Student / Software Developer",
-    heroTitle: "Broad Curiosity, Eagerness to Learn, Global Mindset",
+    badge: "Computer Science Student / Software Engineer",
+    heroTitle: "Building production software and applied AI",
     heroLead:
-      "I am an Informatics student at Nagoya University, working on web development, server operations, digital transformation, and international communication. I care about building systems that are actually used and continuously improved.",
+      "I study computer science at Nagoya University and work across backend infrastructure, observability, full-stack development, and LLM evaluation for construction. I care about shipping systems into real use, measuring how they perform, and improving them continuously.",
     primaryCta: "View Experience",
     secondaryCta: "Contact",
     location: "Japan / Aichi",
@@ -212,15 +273,38 @@ awards: [
 
     aboutTitle: "About",
     aboutText:
-      "My goal is to work at a global technology company and contribute to products with meaningful social impact. Through hands-on experience, I have been learning frontend development, backend systems, databases, server operations, and English communication.",
+      "My experience spans backend infrastructure, full-stack product development, and applied AI/ML. I maintain production systems for a university OpenCourseWare platform and a tutoring school, improved observability for large-scale logging infrastructure at LINE Yahoo, and evaluate and adapt LLMs for construction-domain tasks using quantitative benchmarks.",
 
     educationTitle: "Education",
     education: {
       school: "Nagoya University",
-      period: "Apr 2024 – Present",
-      degree: "Bachelor of Informatics",
-      location: "Japan",
+      period: "Apr 2024 – Expected Mar 2029",
+      degree: "B.S. in Computer Science, School of Informatics",
+      location: "Nagoya, Japan",
     },
+
+    features: [
+      {
+        num: "01",
+        title: "Production Ownership",
+        body: "Taking responsibility from design and implementation through deployment and ongoing operation",
+      },
+      {
+        num: "02",
+        title: "Observability",
+        body: "Using logs and metrics to understand systems and drive measurable improvements",
+      },
+      {
+        num: "03",
+        title: "Applied AI",
+        body: "Applying LLMs to practical problems through benchmarks and evidence-based experimentation",
+      },
+      {
+        num: "04",
+        title: "Global Collaboration",
+        body: "Working across languages and cultures with an open, international perspective",
+      },
+    ],
 
     experienceTitle: "Technical Experience",
     experiences: [
@@ -229,50 +313,86 @@ awards: [
         org: "Nagoya University / Server-side Team",
         period: "2025 – Present",
         points: [
-          "Maintain and improve university web infrastructure and backend systems",
-          "Automated SSL certificate renewal and contributed to server migration and operational reliability",
-          "Developed APIs for the lecture publishing system and supported server maintenance tasks",
+          "Maintain OpenCourseWare backend and infrastructure; automated SSL certificate operations and supported server migration",
+          "Built Markdown change detection that synchronizes lecture updates to a database",
+          "Contributed to an embedding-based course recommendation system and designed API observability fields for request tracing, latency, SQL execution, and result counts",
         ],
-        tags: ["Server Operations", "Backend", "API", "Automation", "SSL"],
+        tags: ["Backend", "Infrastructure", "Embeddings", "API Observability", "Automation"],
       },
       {
         role: "Student Attendance Management System Development",
         org: "Private Tutoring School",
         period: "2024 – Present",
         points: [
-          "Designed and developed a web-based attendance management system from scratch",
-          "Improved operational efficiency by digitizing attendance tracking and administrative workflows",
-          "Managed full-stack implementation including database design, frontend, and backend logic",
-          "The tool is now used by more than 60 students and teachers every day",
+          "Solely designed and built an attendance and student-management web system, and have maintained it for more than one year",
+          "Digitized manual workflows with JavaScript and Firebase / Firestore; the system is used daily by more than 60 students and instructors",
         ],
-        tags: ["Web App", "Firebase", "Frontend", "Backend", "DX"],
+        tags: ["Full Stack", "JavaScript", "Firebase", "Firestore", "Production"],
       },
       {
-  role: "Location-based Campus Facility Search App Development",
-  org: "University Team Project / 6-member Team",
-  period: "2026",
-  points: [
-      "Planned and developed a location-based web app to improve facility search on campus",
-      "Implemented current-location display and nearest-facility search using the Geolocation API, MapLibre GL JS, and Supabase + PostGIS",
-      "Integrated facility details and cleanliness ratings while experiencing the full process from problem definition to improvement",
-  ],
-  tags: ["Next.js", "TypeScript", "MapLibre GL JS", "Supabase", "PostGIS", "Geolocation API"],
-},
-{
-  role: "LLM Domain Adaptation for IFC/BIM",
-  org: "Personal Research Project",
-  period: "2026",
-  points: [
-      "Built a lightweight fine-tuning pipeline for adapting Gemma 3 1B to IFC and BIM-related tasks",
-      "Analyzed Hugging Face datasets and designed a Colab / Tesla T4 training setup using 4-bit quantization and LoRA",
-      "Implemented the experiment cycle including training error analysis, LoRA adapter generation, and qualitative response evaluation",
-  ],
-  tags: ["LLM", "Gemma", "LoRA", "PEFT", "Hugging Face", "Google Colab"],
-},
+        role: "Software Engineer Intern, Observability / Logging Infrastructure",
+        org: "LINE Yahoo Corporation",
+        period: "Aug 2026 – Sep 2026",
+        points: [
+          "Built and optimized a self-service Splunk audit-log dashboard across well over 100K servers; deployed it to the production Splunk environment and reduced processing time by 73% while accounting for delivery latency",
+          "Prototyped AI agent-Splunk integration via MCP, covering architecture, authentication constraints, security review, and HTTP-based log search from Codex CLI without modifying upstream OSS",
+          "Evaluated a stateless redesign and PaaS / CaaS migration of a log-routing system through load tests and log-loss comparisons, documenting scalability, availability, cost, and migration risks",
+        ],
+        tags: ["Splunk", "SPL", "Observability", "MCP", "Codex CLI", "PaaS / CaaS"],
+      },
+      {
+        role: "Construction AI LLM Evaluation & Leaderboard",
+        org: "Personal Research Project",
+        period: "2026",
+        points: [
+          "Designed an AEC / BIM LLM evaluation framework across five commercially usable benchmarks and ran open-weight model evaluations on a GPU cluster",
+          "Designed workflows for API and open models, result tracking, and the ongoing addition of newly released models",
+          "Estimated token usage and evaluation cost across more than 1,000 benchmark tasks to guide model selection and sustainable leaderboard operation",
+        ],
+        tags: ["Python", "vLLM", "Hugging Face", "GPU Cluster", "LLM Evaluation"],
+      },
+      {
+        role: "IFC / BIM Domain-Specific LLM Fine-Tuning",
+        org: "Personal Research Project",
+        period: "2026",
+        points: [
+          "Adapted Gemma 3 1B Instruct to the IFC / BIM domain with LoRA using 33,600 training examples",
+          "On 900 separate evaluation examples, improved ROUGE-L by 68% (0.0973 → 0.1636) and increased BLEU by 2.9× (0.0174 → 0.0502)",
+        ],
+        tags: ["Python", "Gemma 3", "LoRA", "PEFT", "Hugging Face", "LLM Evaluation"],
+      },
+      {
+        role: "hayo - Group Meetup Support App",
+        org: "Hackathon",
+        period: "2026",
+        points: [
+          "Built an app for sharing group members' locations and arrival status",
+          "Placed 4th in the Tokai regional round and 15th nationwide",
+        ],
+        tags: ["Hackathon", "Location Sharing", "Team Development"],
+      },
+      {
+        role: "Campus Facility Search Web App",
+        org: "University Team Project / 6-member Team",
+        period: "2026",
+        points: [
+          "Built a location-based campus facility search app using Next.js, TypeScript, Supabase / PostGIS, and MapLibre GL JS",
+        ],
+        tags: ["Next.js", "TypeScript", "Supabase", "PostGIS", "MapLibre GL JS"],
+      },
     ],
 
     internationalTitle: "International Experience",
     international: [
+      {
+        title: "Asia Undergraduate Summit",
+        org: "National University of Singapore",
+        period: "2026",
+        points: [
+          "Selected as a Top 3 project",
+          "Developing Loop to Life, with a two-week field implementation planned in Laos in Dec 2026",
+        ],
+      },
       {
         title: "University of Oregon Short-term Study",
         org: "United States",
@@ -321,19 +441,19 @@ awards: [
     skillGroups: [
       {
         name: "Programming Languages",
-        skills: ["Python", "Go", "C++", "C", "JavaScript"],
+        skills: ["Python", "Go", "C++", "C", "JavaScript", "TypeScript"],
       },
       {
         name: "Web Development",
         skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "HTML", "CSS"],
       },
       {
-        name: "Backend / Database",
-        skills: ["Firebase", "Firestore", "Supabase", "API Development"],
+        name: "Infrastructure / Backend",
+        skills: ["Linux", "Docker", "Git / GitHub", "Splunk / SPL", "Ansible", "REST APIs", "Firebase / Firestore", "PostgreSQL / PostGIS", "SQLite"],
       },
       {
-        name: "Infrastructure / Tools",
-        skills: ["Git", "GitHub", "Server Operations", "Automation", "SSL"],
+        name: "AI / ML",
+        skills: ["Hugging Face", "vLLM", "LoRA / PEFT", "RAG", "Embeddings", "MCP"],
       },
       {
         name: "Communication",
@@ -371,7 +491,7 @@ awards: [
 export default function Home() {
   const [lang, setLang] = useState<Lang>("ja");
   const t = content[lang];
-  const currentYear = useMemo(() => new Date().getFullYear(), []);
+  const currentYear = new Date().getFullYear();
 
   return (
     <main className="min-h-screen bg-white text-black">
@@ -401,7 +521,9 @@ export default function Home() {
 
           <div className="flex items-center gap-1 border border-black bg-white p-1">
             <button
+              type="button"
               onClick={() => setLang("ja")}
+              aria-pressed={lang === "ja"}
               className={`px-3 py-1.5 text-xs font-bold text-black transition ${
                 lang === "ja" ? "bg-gray-200" : "bg-white"
               }`}
@@ -409,7 +531,9 @@ export default function Home() {
               JP
             </button>
             <button
+              type="button"
               onClick={() => setLang("en")}
+              aria-pressed={lang === "en"}
               className={`px-3 py-1.5 text-xs font-bold text-black transition ${
                 lang === "en" ? "bg-gray-200" : "bg-white"
               }`}
@@ -431,6 +555,7 @@ export default function Home() {
                 src="/profile.jpg"
                 alt={profile.name}
                 fill
+                sizes="(max-width: 1023px) calc(100vw - 3.5rem), 332px"
                 priority
                 className="object-cover"
               />
@@ -495,26 +620,9 @@ export default function Home() {
           </LargeCard>
 
           <div className="grid gap-4 sm:grid-cols-2">
-<FeatureCard
-  num="01"
-  title="Broad Curiosity"
-  body="分野を問わず、知りたいという気持ちを大切にする"
-/>
-<FeatureCard
-  num="02"
-  title="Love of Learning"
-  body="学び続けることを、習慣ではなく喜びにする"
-/>
-<FeatureCard
-  num="03"
-  title="Global Perspective"
-  body="多様な文化・言語を通じて視野を広げる"
-/>
-<FeatureCard
-  num="04"
-  title="Drive to Act"
-  body="考えるだけでなく、まず動いてみる"
-/>
+            {t.features.map((feature) => (
+              <FeatureCard key={feature.num} {...feature} />
+            ))}
           </div>
         </div>
       </Section>
@@ -646,7 +754,7 @@ export default function Home() {
               </a>
 
               <a
-                href="https://github.com/"
+                href={profile.github}
                 target="_blank"
                 rel="noreferrer"
                 className="border border-black bg-white px-6 py-3 text-center text-sm font-black text-black transition hover:bg-gray-200"
@@ -655,7 +763,7 @@ export default function Home() {
               </a>
 
               <a
-                href="https://www.linkedin.com/"
+                href={profile.linkedin}
                 target="_blank"
                 rel="noreferrer"
                 className="border border-black bg-white px-6 py-3 text-center text-sm font-black text-black transition hover:bg-gray-200"

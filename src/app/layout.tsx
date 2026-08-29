@@ -3,9 +3,9 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Koki | Portfolio",
+  title: "Koki Matsuoka | Software Engineer Portfolio",
   description:
-    "Bilingual portfolio website built with Next.js, Tailwind CSS, and Vercel.",
+    "Koki Matsuoka's bilingual portfolio featuring backend infrastructure, observability, full-stack development, and applied LLM projects.",
 };
 
 export default function RootLayout({
