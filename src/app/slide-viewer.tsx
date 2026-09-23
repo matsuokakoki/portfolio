@@ -76,7 +76,7 @@ export function SlideViewer({
           }}
         >
           <Image
-            src={`/slides/${deck}/${String(page).padStart(2, "0")}.jpg`}
+            src={`/slides/${deck}${isJapanese ? "" : "-en"}/${String(page).padStart(2, "0")}.jpg`}
             width={1600}
             height={900}
             sizes="(max-width: 1100px) 96vw, 1100px"
