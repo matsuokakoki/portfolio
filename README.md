@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Koki Matsuoka — Portfolio
 
-## Getting Started
+Software Engineer / ML Engineer を志望する松岡功樹の日本語・英語ポートフォリオです。経歴の概要から、公開コードと実験記録へ進めます。
 
-First, run the development server:
+**Status:** 個人ポートフォリオとして公開中。掲載内容は本人の経歴と、リンク先の公開成果物に基づきます。  
+**Stack:** Next.js 16, React 19, TypeScript, Tailwind CSS.  
+**Live site:** https://portfolio-cyan-mu-6imgn9qr9w.vercel.app/ （このREADME更新時点で到達テストは未実施）
+
+## Public projects
+
+- [Career Form Autofill](https://github.com/matsuokakoki/career-form-autofill): 選択・確認して入力するChrome拡張。
+- [Extreme Hanafuda](https://github.com/matsuokakoki/hanahuda): TypeScriptのゲームルールとFirebaseを用いた2人対戦ゲーム。
+- [IFC/BIM LoRA experiment](https://github.com/matsuokakoki/ifc-bim-llm-finetuning): 学習・評価条件、失敗例、制約を公開した研究記録。
+- [ECG SNN research prototype](https://github.com/matsuokakoki/ecg_snn_project): SNN/CNN比較の試作。現在の結果はFold 0の限定的なもので、評価プロトコルを整理中。
+
+## Run locally
+
+Node.js 24 と npm を使用します。
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:3000 を開きます。静的な経歴・作品情報は `src/app/portfolio-data.ts`、ページ表示は `src/app/page.tsx` にあります。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Quality checks
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+このREADMEの作成時点では上記コマンドを実行していません。専用の自動テストはまだありません。
 
-To learn more about Next.js, take a look at the following resources:
+## Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- LoRA実験の回答部分のlossは別形式の評価900件、ROUGE/BLEUは生成50件で比較しています。指標と限界の詳細は[実験レポート](https://github.com/matsuokakoki/ifc-bim-llm-finetuning/blob/main/reports/experiment_log.md)を参照してください。
+- 塾の出席管理システムは本番運用中のPrivate repoです。コードや利用者データは公開していません。
+- 写真、氏名、連絡先、組織名・経歴は公開ページに表示されます。プロフィール写真の権利と組織に関する表現は本人による確認が必要です。
