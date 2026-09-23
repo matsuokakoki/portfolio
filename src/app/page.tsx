@@ -395,6 +395,7 @@ function ExperienceCard({
     period: string;
     points: string[];
     tags: string[];
+    repoUrl?: string;
   };
 }) {
   return (
@@ -402,6 +403,7 @@ function ExperienceCard({
       <p className="text-sm font-black text-black">{item.period}</p>
       <h3 className="mt-3 text-2xl font-black text-black">{item.role}</h3>
       <p className="mt-2 font-medium text-black">{item.org}</p>
+      {item.repoUrl && <a href={item.repoUrl} target="_blank" rel="noreferrer" className="mt-3 inline-block font-bold underline">Source and results →</a>}
 
       <ul className="mt-5 space-y-3 text-black">
         {item.points.map((point) => (
