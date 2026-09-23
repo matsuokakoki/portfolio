@@ -115,11 +115,6 @@ export function SlideViewer({
             {isJapanese ? "次へ" : "Next"}
           </button>
         </div>
-        <p className="px-4 pb-3 text-xs text-black/65 sm:px-6">
-          {isJapanese
-            ? "個人情報保護のため、一部の画面例を非表示にしています。"
-            : "Some app screenshots are hidden to protect personal information."}
-        </p>
       </dialog>
     </>
   );
