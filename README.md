@@ -2,9 +2,11 @@
 
 Software Engineer / ML Engineer を志望する松岡功樹の日本語・英語ポートフォリオです。経歴の概要から、公開コードと実験記録へ進めます。
 
-**Status:** Public repositoryとして公開中。掲載内容は本人の経歴と、リンク先の公開成果物に基づきます。  
-**Stack:** Next.js 16, React 19, TypeScript, Tailwind CSS.  
-**Deployment URL:** https://portfolio-cyan-mu-6imgn9qr9w.vercel.app/ （2026-09-23の外部アクセス確認では到達できず、公開デモとしての動作は未確認）
+**Status:** Public repositoryとして公開中。掲載内容は本人の経歴と、リンク先の公開成果物に基づきます。
+
+**Stack:** Next.js 16, React 19, TypeScript, Tailwind CSS.
+
+**Verified deployment:** https://portfolio-88lo85s8l-koki-matsuoka-portfolio.vercel.app/ （2026-09-23にブラウザで表示確認。旧URLは404）
 
 ## Public projects
 
