@@ -86,6 +86,7 @@ education: {
           "現在、60人以上の生徒・講師が毎日利用",
         ],
         tags: ["Full Stack", "JavaScript", "Firebase", "Firestore", "Production"],
+        slideDeck: "attendance" as const,
       },
       {
         role: "Software Engineer Intern / インフラ",
@@ -117,6 +118,7 @@ education: {
           "THE HACK東海予選で4位に入賞。企画とUX方針の検討にも参加",
         ],
         tags: ["iOS", "Hackathon", "Location Sharing", "Team Development"],
+        slideDeck: "hayo" as const,
       },
     ],
 
@@ -130,6 +132,7 @@ education: {
           "Top 3プロジェクトに選出",
           "Loop to Lifeを開発し、2026年12月にラオスで2週間の現地実施を予定",
         ],
+        url: "https://matsuokakoki.github.io/looptolife/",
       },
       {
         title: "University of Oregon Short-term Study",
@@ -306,6 +309,7 @@ awards: [
           "The system is now used daily by more than 60 students and instructors",
         ],
         tags: ["Full Stack", "JavaScript", "Firebase", "Firestore", "Production"],
+        slideDeck: "attendance" as const,
       },
       {
         role: "Software Engineer Intern, Infrastructure",
@@ -337,6 +341,7 @@ awards: [
           "Placed 4th in THE HACK Tokai regional round and contributed to product planning and UX direction",
         ],
         tags: ["iOS", "Hackathon", "Location Sharing", "Team Development"],
+        slideDeck: "hayo" as const,
       },
     ],
 
@@ -350,6 +355,7 @@ awards: [
           "Selected as a Top 3 project",
           "Developing Loop to Life, with a two-week field implementation planned in Laos in Dec 2026",
         ],
+        url: "https://matsuokakoki.github.io/looptolife/",
       },
       {
         title: "University of Oregon Short-term Study",

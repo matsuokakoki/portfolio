@@ -4,6 +4,7 @@ import { useState } from "react";
 import type { ReactNode } from "react";
 import Image from "next/image";
 import { content, profile, projects } from "./portfolio-data";
+import { SlideViewer } from "./slide-viewer";
 
 type Lang = "ja" | "en";
 
@@ -174,7 +175,7 @@ export default function Home() {
       <Section id="experience" title={t.experienceTitle} tone="gray">
         <div className="grid gap-5 lg:grid-cols-2">
           {t.experiences.map((item) => (
-            <ExperienceCard key={item.role} item={item} />
+            <ExperienceCard key={item.role} item={item} lang={lang} />
           ))}
         </div>
       </Section>
@@ -237,6 +238,16 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+              {"url" in item && (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-block text-sm font-bold text-blue-950 underline underline-offset-4"
+                >
+                  {lang === "ja" ? "Loop2Lifeのサイトを見る ↗" : "Explore Loop2Life ↗"}
+                </a>
+              )}
             </TimelineItem>
           ))}
         </Timeline>
@@ -417,6 +428,7 @@ function LargeCard({ children }: { children: ReactNode }) {
 
 function ExperienceCard({
   item,
+  lang,
 }: {
   item: {
     role: string;
@@ -425,7 +437,9 @@ function ExperienceCard({
     points: string[];
     tags: string[];
     repoUrl?: string;
+    slideDeck?: "hayo" | "attendance";
   };
+  lang: Lang;
 }) {
   return (
     <article className="border border-black border-t-4 border-t-blue-950 bg-white p-6 transition hover:bg-blue-950/5">
@@ -453,6 +467,9 @@ function ExperienceCard({
           </span>
         ))}
       </div>
+      {item.slideDeck && (
+        <SlideViewer deck={item.slideDeck} title={item.role} lang={lang} />
+      )}
     </article>
   );
 }
