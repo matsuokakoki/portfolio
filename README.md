@@ -33,7 +33,7 @@ npm run lint
 npm run build
 ```
 
-2026-09-23にNode.js 22.22.0で `npm run lint` と `npm run build` を実行し、成功しました。`package.json` の想定はNode.js 24.xなので、想定環境での再確認が必要です。専用の自動テストはまだありません。
+2026-09-23にNode.js 22.22.0で `npm run lint` と `npm run build` を実行し、成功しました。`package.json` の想定はNode.js 24.xで、GitHub ActionsはNode.js 24で同じ検査を実行します。専用の自動テストはまだありません。
 
 ## Notes
 
