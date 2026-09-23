@@ -12,6 +12,7 @@ export const content = {
       "About",
       "Education",
       "Experience",
+      "Projects",
       "International",
       "Activities",
       "Skills",
@@ -117,6 +118,7 @@ education: {
           "別形式の900件では回答部分のlossを評価。生成50件の簡易指標ではROUGE-Lが0.0973 → 0.1636、BLEUが0.0174 → 0.0502",
         ],
         tags: ["Python", "Gemma 3", "LoRA", "PEFT", "Hugging Face", "LLM Evaluation"],
+        repoUrl: "https://github.com/matsuokakoki/ifc-bim-llm-finetuning",
       },
       {
         role: "hayo - グループ待ち合わせ支援アプリ",
@@ -250,6 +252,7 @@ awards: [
       "About",
       "Education",
       "Experience",
+      "Projects",
       "International",
       "Activities",
       "Skills",
@@ -356,6 +359,7 @@ awards: [
           "Evaluated answer-only loss on 900 differently formatted examples. On 50 generated answers, simple ROUGE-L rose from 0.0973 to 0.1636 and BLEU from 0.0174 to 0.0502",
         ],
         tags: ["Python", "Gemma 3", "LoRA", "PEFT", "Hugging Face", "LLM Evaluation"],
+        repoUrl: "https://github.com/matsuokakoki/ifc-bim-llm-finetuning",
       },
       {
         role: "hayo - Group Meetup Support App",
