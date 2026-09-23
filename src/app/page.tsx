@@ -182,11 +182,40 @@ export default function Home() {
       <Section id="projects" title={lang === "ja" ? "公開プロジェクト" : "Public Projects"} tone="white">
         <div className="grid gap-5 md:grid-cols-2">
           {projects.map((project) => (
-            <a key={project.url} href={project.url} target="_blank" rel="noreferrer" className="border border-black border-t-4 border-t-blue-950 bg-white p-6 transition hover:bg-gray-100">
+            <article
+              key={project.name}
+              className="border border-black border-t-4 border-t-blue-950 bg-white p-6 transition hover:bg-gray-100"
+            >
               <h3 className="text-2xl font-black">{project.name}</h3>
-              <p className="mt-3 leading-7">{lang === "ja" ? project.ja : project.en}</p>
-              <span className="mt-4 inline-block font-bold underline">GitHub →</span>
-            </a>
+              <ul className="mt-5 space-y-3 text-black">
+                {(lang === "ja" ? project.ja : project.en).map((point) => (
+                  <li key={point} className="flex gap-3 leading-7">
+                    <span className="mt-2.5 h-1.5 w-1.5 shrink-0 bg-black" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="border border-blue-950 bg-blue-950/10 px-3 py-1 text-xs font-bold text-black"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              {"url" in project && (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 inline-block border border-black bg-white px-4 py-2 text-sm font-black text-black transition hover:bg-gray-200"
+                >
+                  {lang === "ja" ? "リポジトリを見る ↗" : "View repository ↗"}
+                </a>
+              )}
+            </article>
           ))}
         </div>
       </Section>

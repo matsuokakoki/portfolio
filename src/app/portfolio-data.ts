@@ -99,45 +99,24 @@ education: {
         tags: ["Infrastructure", "System Operations", "AI", "Performance", "Reliability"],
       },
       {
-        role: "LLM評価・リーダーボード",
-        org: "個人研究プロジェクト",
+        role: "AI開発インターン",
+        org: "OneStruction株式会社",
         period: "2026年",
         points: [
-          "商用利用可能な5つのベンチマークを用いたLLM評価基盤を設計し、GPUクラスタ上でオープンウェイトモデルを評価",
-          "APIモデル・オープンモデル双方の評価フロー、結果管理、新モデルを継続追加する運用方式を設計",
-          "1,000件超のベンチマークタスクについてトークン使用量と評価コストを試算し、モデル選定と継続運用の判断材料を作成",
+          "複数のベンチマークを用いたLLM評価基盤とリーダーボードに取り組み、モデルの比較・結果管理の仕組みを設計",
+          "Gemma 3 1BをLoRAで専門領域に追加学習し、評価結果や失敗例を整理。実験の詳細は公開プロジェクトに掲載",
         ],
-        tags: ["Python", "vLLM", "Hugging Face", "GPU Cluster", "LLM Evaluation"],
-      },
-      {
-        role: "ドメイン特化LLMファインチューニング",
-        org: "個人研究プロジェクト",
-        period: "2026年",
-        points: [
-          "Gemma 3 1B InstructをLoRAで特定領域へ適応し、33,600件の学習データで学習",
-          "別形式の900件では回答部分のlossを評価。生成50件の簡易指標ではROUGE-Lが0.0973 → 0.1636、BLEUが0.0174 → 0.0502",
-        ],
-        tags: ["Python", "Gemma 3", "LoRA", "PEFT", "Hugging Face", "LLM Evaluation"],
-        repoUrl: "https://github.com/matsuokakoki/ifc-bim-llm-finetuning",
+        tags: ["Python", "LLM Evaluation", "Leaderboard", "LoRA", "Hugging Face"],
       },
       {
         role: "hayo - グループ待ち合わせ支援アプリ",
         org: "ハッカソン",
         period: "2026年",
         points: [
-          "グループメンバーの位置情報と到着状況を共有するアプリを開発",
-          "東海予選4位・全国15位を獲得",
+          "4人チームで位置共有と写真ミッションを組み合わせた待ち合わせ支援iOSアプリを開発し、技術選定を主導",
+          "THE HACK東海予選で4位に入賞。企画とUX方針の検討にも参加",
         ],
-        tags: ["Hackathon", "Location Sharing", "Team Development"],
-      },
-      {
-        role: "大学構内施設検索Webアプリ",
-        org: "大学チーム開発 / 6人チーム",
-        period: "2026年",
-        points: [
-          "Next.js、TypeScript、Supabase / PostGIS、MapLibre GL JSを用いた位置情報ベースの大学構内施設検索アプリを開発",
-        ],
-        tags: ["Next.js", "TypeScript", "Supabase", "PostGIS", "MapLibre GL JS"],
+        tags: ["iOS", "Hackathon", "Location Sharing", "Team Development"],
       },
     ],
 
@@ -340,45 +319,24 @@ awards: [
         tags: ["Infrastructure", "System Operations", "AI", "Performance", "Reliability"],
       },
       {
-        role: "LLM Evaluation & Leaderboard",
-        org: "Personal Research Project",
+        role: "AI Development Intern",
+        org: "OneStruction Inc.",
         period: "2026",
         points: [
-          "Designed an LLM evaluation framework across five commercially usable benchmarks and ran open-weight model evaluations on a GPU cluster",
-          "Designed workflows for API and open models, result tracking, and the ongoing addition of newly released models",
-          "Estimated token usage and evaluation cost across more than 1,000 benchmark tasks to guide model selection and sustainable leaderboard operation",
+          "Worked on an LLM evaluation framework and leaderboard using multiple benchmarks, including model comparison and result-management workflows",
+          "Fine-tuned Gemma 3 1B with LoRA for a specialized domain and documented evaluation results and failure cases; details are listed under Public Projects",
         ],
-        tags: ["Python", "vLLM", "Hugging Face", "GPU Cluster", "LLM Evaluation"],
-      },
-      {
-        role: "Domain-Specific LLM Fine-Tuning",
-        org: "Personal Research Project",
-        period: "2026",
-        points: [
-          "Adapted Gemma 3 1B Instruct to a specialized domain with LoRA using 33,600 training examples",
-          "Evaluated answer-only loss on 900 differently formatted examples. On 50 generated answers, simple ROUGE-L rose from 0.0973 to 0.1636 and BLEU from 0.0174 to 0.0502",
-        ],
-        tags: ["Python", "Gemma 3", "LoRA", "PEFT", "Hugging Face", "LLM Evaluation"],
-        repoUrl: "https://github.com/matsuokakoki/ifc-bim-llm-finetuning",
+        tags: ["Python", "LLM Evaluation", "Leaderboard", "LoRA", "Hugging Face"],
       },
       {
         role: "hayo - Group Meetup Support App",
         org: "Hackathon",
         period: "2026",
         points: [
-          "Built an app for sharing group members' locations and arrival status",
-          "Placed 4th in the Tokai regional round and 15th nationwide",
+          "Developed an iOS meetup app combining location sharing and photo missions in a four-person team; led technology selection",
+          "Placed 4th in THE HACK Tokai regional round and contributed to product planning and UX direction",
         ],
-        tags: ["Hackathon", "Location Sharing", "Team Development"],
-      },
-      {
-        role: "Campus Facility Search Web App",
-        org: "University Team Project / 6-member Team",
-        period: "2026",
-        points: [
-          "Built a location-based campus facility search app using Next.js, TypeScript, Supabase / PostGIS, and MapLibre GL JS",
-        ],
-        tags: ["Next.js", "TypeScript", "Supabase", "PostGIS", "MapLibre GL JS"],
+        tags: ["iOS", "Hackathon", "Location Sharing", "Team Development"],
       },
     ],
 
@@ -490,8 +448,81 @@ awards: [
 
 
 export const projects = [
-  { name: "Career Form Autofill", url: "https://github.com/matsuokakoki/career-form-autofill", ja: "応募フォームの候補を確認してから入力するChrome拡張。送信は行わない。", en: "A Chrome extension that previews suggested form values before the user chooses what to fill; it never submits the form." },
-  { name: "Extreme Hanafuda", url: "https://github.com/matsuokakoki/hanahuda", ja: "2人対戦ゲーム。TypeScriptの純粋なゲームロジックとFirebaseの認可・同期を分離。", en: "A two-player game with pure TypeScript rules and Firebase-based authorization and synchronization." },
-  { name: "IFC/BIM LoRA Experiment", url: "https://github.com/matsuokakoki/ifc-bim-llm-finetuning", ja: "重複除去後のLoRA実験。改善値と誤答、評価の限界を公開。", en: "A LoRA experiment documenting deduplication, measured improvements, wrong answers, and evaluation limits." },
-  { name: "ECG SNN Research Prototype", url: "https://github.com/matsuokakoki/ecg_snn_project", ja: "ECG異常検知のSNN/CNN比較試作。評価プロトコルと結果は整理中。", en: "An ECG SNN/CNN research prototype; the evaluation protocol and results are being reconciled." },
+  {
+    name: "Mean-Field MPC for Serverless Workloads",
+    url: "https://github.com/matsuokakoki/mean-field-mpc",
+    ja: [
+      "需要予測・mean-fieldモデル・有限サーバーのキューシミュレーションを統合し、バースト性のあるサーバーレスワークロード向けキャパシティ制御を評価。Docker Composeで再現可能な実装を公開",
+      "高負荷シナリオでは、リソース使用量が同程度の条件で、EWMAベースのMF-MPCが反応型制御よりシミュレーション上のp95待ち時間を56.7%削減。実サービスでの性能を示す結果ではないことも明記",
+    ],
+    en: [
+      "Combined demand forecasting, a mean-field model, and finite-server queue simulation to study capacity control for bursty serverless workloads; published a reproducible Docker Compose setup",
+      "In a high-load simulation with comparable resource use, EWMA-based MF-MPC reduced p95 wait time by 56.7% versus reactive control. This does not establish performance on a live Azure service",
+    ],
+    tags: ["Python", "Gaussian Process", "Queueing", "Docker"],
+  },
+  {
+    name: "Career Form Autofill",
+    url: "https://github.com/matsuokakoki/career-form-autofill",
+    ja: [
+      "応募フォームのHTML属性・ラベル・周辺テキストから入力欄を推定し、保存済みプロフィールの候補を提示するChrome拡張機能を開発",
+      "推定の確度をプレビューし、利用者が選んだ項目だけを入力。自動送信は行わず、LLMによる補助判定でもプロフィール値は送信しない設計",
+    ],
+    en: [
+      "Built a Chrome extension that infers application form fields from HTML attributes, labels, and nearby text, then suggests values from a saved profile",
+      "Shows confidence-scored suggestions and fills only user-selected fields. It never auto-submits forms or sends profile values to an optional LLM classifier",
+    ],
+    tags: ["Chrome Extension", "JavaScript", "UX", "Privacy"],
+  },
+  {
+    name: "Extreme Hanafuda",
+    url: "https://github.com/matsuokakoki/hanahuda",
+    ja: [
+      "2人で対戦できる花札Webゲームを開発し、ブラウザで遊べる形で公開",
+      "ゲームのルールをFirebaseから独立したTypeScriptの処理に分け、ゲーム進行とFirestoreを使った状態同期を実装",
+    ],
+    en: [
+      "Built and published a playable two-player Hanafuda web game",
+      "Separated game rules into a Firebase-independent TypeScript engine and implemented game progression with Firestore-backed state synchronization",
+    ],
+    tags: ["TypeScript", "React", "Firebase", "Game Development"],
+  },
+  {
+    name: "IFC/BIM LoRA Experiment",
+    url: "https://github.com/matsuokakoki/ifc-bim-llm-finetuning",
+    ja: [
+      "IFC/BIMに関する質問応答を対象にGemma 3 1BをLoRAで追加学習。学習・評価の手順、測定結果、出力例と失敗ケースを公開",
+      "独立した900件で回答損失を評価し、別の50件の生成比較ではROUGE-Lが0.0973から0.1636、BLEUが0.0174から0.0502に変化。これらの指標だけでは事実の正確さを保証できないことも記載",
+    ],
+    en: [
+      "Fine-tuned Gemma 3 1B with LoRA for IFC/BIM question answering and published the training/evaluation workflow, measurements, output examples, and failure cases",
+      "Measured answer loss on 900 separate examples; on a separate 50-generation comparison, ROUGE-L changed from 0.0973 to 0.1636 and BLEU from 0.0174 to 0.0502. These metrics alone do not establish factual accuracy",
+    ],
+    tags: ["Python", "Gemma 3", "LoRA", "LLM Evaluation"],
+  },
+  {
+    name: "Hayo",
+    url: "https://github.com/matsuokakoki/hayo",
+    ja: [
+      "4人チームで位置共有と写真ミッションを組み合わせた待ち合わせ支援iOSアプリを開発。技術選定を主導し、企画とUX方針の検討にも参加",
+      "THE HACK東海予選で4位に入賞。技術とユーザー体験の両面からチームで開発を進めた",
+    ],
+    en: [
+      "Developed an iOS meetup app combining location sharing and photo missions in a four-person team. Led technology selection and contributed to product planning and UX direction",
+      "Placed 4th in THE HACK Tokai regional round, balancing implementation with the user experience as a team",
+    ],
+    tags: ["iOS", "SwiftUI", "Firebase", "Hackathon"],
+  },
+  {
+    name: "LLM Benchmark Leaderboard",
+    ja: [
+      "5つのベンチマークを用いたLLM評価基盤を設計し、GPUクラスタでオープンウェイトモデルを評価",
+      "APIモデルとオープンモデルの評価フローや結果管理を設計。1,000件超のタスクについてトークン使用量と評価コストを試算",
+    ],
+    en: [
+      "Designed an LLM evaluation framework using five benchmarks and evaluated open-weight models on a GPU cluster",
+      "Designed evaluation and result-management workflows for API and open models, and estimated token usage and cost across more than 1,000 tasks",
+    ],
+    tags: ["Python", "vLLM", "Hugging Face", "LLM Evaluation"],
+  },
 ] as const;
