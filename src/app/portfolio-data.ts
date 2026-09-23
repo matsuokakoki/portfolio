@@ -67,6 +67,7 @@ education: {
       {
     role: "NUOCW Web運用スタッフ",
     org: "名古屋大学 / サーバーサイド班",
+        siteUrl: "https://ocw.nagoya-u.jp/",
         period: "2025年 – 現在",
         points: [
           "OpenCourseWareのバックエンド・インフラを保守・改善し、SSL証明書関連の運用自動化とサーバー移行を支援",
@@ -290,6 +291,7 @@ awards: [
       {
         role: "NUOCW Web Operations Staff",
         org: "Nagoya University / Server-side Team",
+        siteUrl: "https://ocw.nagoya-u.jp/",
         period: "2025 – Present",
         points: [
           "Maintain OpenCourseWare backend and infrastructure; automated SSL certificate operations and supported server migration",
