@@ -39,4 +39,4 @@ npm run build
 
 - LoRA実験の回答部分のlossは別形式の評価900件、ROUGE/BLEUは生成50件で比較しています。指標と限界の詳細は[実験レポート](https://github.com/matsuokakoki/ifc-bim-llm-finetuning/blob/main/reports/experiment_log.md)を参照してください。
 - 塾の出席管理システムは本番運用中のPrivate repoです。コードや利用者データは公開していません。
-- 写真、氏名、連絡先、組織名・経歴は公開ページに表示されます。プロフィール写真の権利と組織に関する表現は本人による確認が必要です。
+- 写真、氏名、連絡先、組織名・経歴は公開ページに表示されます。
