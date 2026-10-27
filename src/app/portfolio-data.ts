@@ -1,6 +1,5 @@
 export const profile = {
   name: "松岡功樹(Koki Matsuoka)",
-  email: "i5k0o9k@gmail.com",
   university: "Nagoya University",
   github: "https://github.com/matsuokakoki",
   linkedin: "https://www.linkedin.com/in/koki-matsuoka-nagoya-japan/",

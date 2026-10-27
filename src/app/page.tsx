@@ -317,13 +317,6 @@ export default function Home() {
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
-                href={`mailto:${profile.email}`}
-                className="border border-black bg-white px-6 py-3 text-center text-sm font-black text-black transition hover:bg-gray-200"
-              >
-                {t.emailLabel}: {profile.email}
-              </a>
-
-              <a
                 href={profile.github}
                 target="_blank"
                 rel="noreferrer"
