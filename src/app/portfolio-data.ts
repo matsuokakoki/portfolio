@@ -111,6 +111,13 @@ education: {
         tags: ["Python", "LLM Evaluation", "Leaderboard", "LoRA", "Hugging Face"],
       },
       {
+        role: "nigeyo - 地震・津波の避難支援アプリ",
+        org: "JPHACKS 2026",
+        period: "2026年",
+        points: ["在留外国人向けにピクトグラムと日本語・英語・韓国語の案内、Live Activityで初動と避難を支援するiPhoneアプリをチームで開発", "名古屋会場の26チーム中、オーディエンス投票で2位"],
+        tags: ["Swift", "SwiftUI", "Live Activities", "Hackathon"],
+      },
+      {
         role: "hayo - グループ待ち合わせ支援アプリ",
         org: "ハッカソン",
         period: "2026年",
@@ -335,6 +342,13 @@ awards: [
         tags: ["Python", "LLM Evaluation", "Leaderboard", "LoRA", "Hugging Face"],
       },
       {
+        role: "nigeyo - Earthquake and Tsunami Evacuation Support App",
+        org: "JPHACKS 2026",
+        period: "2026",
+        points: ["A team-built iPhone app supporting foreign residents with initial response and evacuation through pictograms, Japanese, English and Korean guidance, and Live Activities", "Placed 2nd in the audience vote among 26 teams at the Nagoya venue"],
+        tags: ["Swift", "SwiftUI", "Live Activities", "Hackathon"],
+      },
+      {
         role: "hayo - Group Meetup Support App",
         org: "Hackathon",
         period: "2026",
@@ -507,6 +521,13 @@ export const projects = [
       "Measured answer loss on 900 separate examples; on a separate 50-generation comparison, ROUGE-L changed from 0.0973 to 0.1636 and BLEU from 0.0174 to 0.0502. These metrics alone do not establish factual accuracy",
     ],
     tags: ["Python", "Gemma 3", "LoRA", "LLM Evaluation"],
+  },
+  {
+    name: "nigeyo",
+    url: "https://github.com/jphacks/ng_2610",
+    ja: ["在留外国人向けにピクトグラムと日本語・英語・韓国語の案内、Live Activityで地震・津波の初動と避難を支援するiPhoneアプリをチームで開発", "JPHACKS 2026名古屋会場の26チーム中、オーディエンス投票で2位"],
+    en: ["A team-built iPhone app supporting foreign residents with earthquake and tsunami response and evacuation through pictograms, Japanese, English and Korean guidance, and Live Activities", "Placed 2nd in the audience vote among 26 teams at the JPHACKS 2026 Nagoya venue"],
+    tags: ["Swift", "SwiftUI", "Live Activities", "Hackathon"],
   },
   {
     name: "Hayo",

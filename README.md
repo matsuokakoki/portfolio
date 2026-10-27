@@ -10,6 +10,8 @@ Software Engineer / ML Engineer を志望する松岡功樹の日本語・英語
 
 ## Public projects
 
+- [nigeyo](https://github.com/jphacks/ng_2610): Swift / SwiftUIを用いた、ピクトグラムと多言語案内、Live Activityによる地震・津波の避難支援アプリ。JPHACKS 2026名古屋会場の26チーム中オーディエンス投票2位。
+
 - [Career Form Autofill](https://github.com/matsuokakoki/career-form-autofill): 選択・確認して入力するChrome拡張。
 - [Extreme Hanafuda](https://github.com/matsuokakoki/hanahuda): TypeScriptのゲームルールとFirebaseを用いた2人対戦ゲーム。
 - [IFC/BIM LoRA experiment](https://github.com/matsuokakoki/ifc-bim-llm-finetuning): 学習・評価条件、失敗例、制約を公開した研究記録。
