@@ -69,8 +69,9 @@ education: {
         siteUrl: "https://ocw.nagoya-u.jp/",
         period: "2025年 – 現在",
         points: [
-          "OpenCourseWareのバックエンド・インフラを保守・改善し、SSL証明書関連の運用自動化とサーバー移行を支援",
-          "講義Markdownの変更を検知してデータベースへ同期する仕組みを開発",
+          "約8名のサーバーサイド班で継続運用中のOpenCourseWareのバックエンド・インフラを保守・改善し、コードレビューやチーム全体のタスク管理を担当",
+          "後輩の進捗支援や新人向け技術研修を実施し、既存システムの技術的負債の整理・改善にも取り組む",
+          "SSL証明書関連の運用自動化とサーバー移行を支援し、講義Markdownの変更を検知してデータベースへ同期する仕組みを開発",
           "Embeddingを用いた講義推薦システムに参加し、APIの運用・改善に必要な記録項目を設計",
         ],
         tags: ["Backend", "Infrastructure", "Embeddings", "API", "Automation"],
@@ -136,8 +137,8 @@ education: {
         org: "National University of Singapore",
         period: "2026",
         points: [
-          "Top 3プロジェクトに選出",
-          "Loop to Lifeを開発し、2026年12月にラオスで2週間の現地実施を予定",
+          "多国籍チームのプロジェクトが、最終発表に進んだ3プロジェクトの1つに選出",
+          "Loop to Lifeを開発し、2026年12月にラオスでの現地実施を予定",
         ],
         url: "https://matsuokakoki.github.io/looptolife/",
       },
@@ -211,6 +212,11 @@ skillGroups: [
 
     awardsTitle: "Awards & Qualifications",
 awards: [
+  {
+    title: "JPHACKS 2026 Innovator認定 — nigeyo（Team WoS）",
+    period: "2026年",
+    body: "地震・津波時の行動案内をロック画面に表示するiOSアプリ「nigeyo」でInnovator認定を取得。",
+  },
   {
     title: "応用情報技術者試験 合格",
     period: "2025年",
@@ -300,9 +306,10 @@ awards: [
         siteUrl: "https://ocw.nagoya-u.jp/",
         period: "2025 – Present",
         points: [
-          "Maintain OpenCourseWare backend and infrastructure; automated SSL certificate operations and supported server migration",
-          "Built Markdown change detection that synchronizes lecture updates to a database",
-          "Contributed to an embedding-based course recommendation system and designed data fields to support API operation and improvement",
+          "Maintain the OpenCourseWare backend and infrastructure in an approximately eight-member server-side team, contributing to code reviews and team-wide task management",
+          "Mentor junior members, track their progress, conduct technical onboarding sessions, and address technical debt in existing systems",
+          "Support SSL certificate operations automation and server migration; built a workflow to detect lecture Markdown changes and synchronize them to a database",
+          "Contributed to an embedding-based course recommendation system by designing data fields for API operations and improvement",
         ],
         tags: ["Backend", "Infrastructure", "Embeddings", "API", "Automation"],
       },
@@ -367,8 +374,8 @@ awards: [
         org: "National University of Singapore",
         period: "2026",
         points: [
-          "Selected as a Top 3 project",
-          "Developing Loop to Life, with a two-week field implementation planned in Laos in Dec 2026",
+          "Our multinational team's project was selected as one of three projects presented at the final stage",
+          "Developing Loop to Life, with field activities planned in Laos in Dec 2026",
         ],
         url: "https://matsuokakoki.github.io/looptolife/",
       },
@@ -442,6 +449,11 @@ awards: [
 
     awardsTitle: "Awards & Qualifications",
     awards: [
+      {
+        title: "JPHACKS 2026 — Innovator Recognition (nigeyo, Team WoS)",
+        period: "2026",
+        body: "Received Innovator recognition for nigeyo, an iOS app providing lock-screen guidance for earthquake and tsunami response.",
+      },
       {
         title: "Applied Information Technology Engineer Examination",
         period: "2025",
@@ -523,9 +535,9 @@ export const projects = [
   },
   {
     name: "nigeyo",
-    url: "https://github.com/jphacks/ng_2610",
-    ja: ["在留外国人向けにピクトグラムと日本語・英語・韓国語の案内、Live Activityで地震・津波の初動と避難を支援するiPhoneアプリをチームで開発", "JPHACKS 2026名古屋会場の26チーム中、オーディエンス投票で2位"],
-    en: ["A team-built iPhone app supporting foreign residents with earthquake and tsunami response and evacuation through pictograms, Japanese, English and Korean guidance, and Live Activities", "Placed 2nd in the audience vote among 26 teams at the JPHACKS 2026 Nagoya venue"],
+    url: "https://github.com/wos-team/nigeyo",
+    ja: ["在留外国人向けにピクトグラムと日本語・英語・韓国語の案内、Live Activityで地震・津波の初動と避難を支援するiPhoneアプリをチームで開発", "JPHACKS 2026 Innovator認定。名古屋会場の26チーム中、オーディエンス投票で2位"],
+    en: ["A team-built iPhone app supporting foreign residents with earthquake and tsunami response and evacuation through pictograms, Japanese, English and Korean guidance, and Live Activities", "Received JPHACKS 2026 Innovator recognition and placed 2nd in the audience vote among 26 teams at the Nagoya venue"],
     tags: ["Swift", "SwiftUI", "Live Activities", "Hackathon"],
   },
   {
